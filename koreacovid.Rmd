@@ -24,8 +24,8 @@ state of a patient must be died or alive - we adjust that as well
   
 # Question 1 - Is dying independent of sex
 
-$H_0$: Dying is independent of sex.
-$H_A$: Dying is dependent of sex.
+$H_0$: Dying from Covid-19 is independent of sex.
+$H_A$: Dying from Covid-19 is dependent of sex.
 
 
 
@@ -87,10 +87,10 @@ chisqtestGC(table2)
 fisher.test(table2)
 ```
 
-The p-value 0.001 in the Pearson chi-squared test is small enough to reject the Null hypothesis. The death rate on Korean is dependent on sex.
+The p-value 0.001 in the Pearson's chi-squared test is small enough to reject the Null hypothesis. The death rate in Korean from Covid-19 is dependent on sex.
 
 The Fisher Exact test shows that men died at 2.3 times than the rate women die.
 
 ## Conclusions
 
-The question was if dying is independent of sex. After analyzing the ggplot, numerical summary, Pearson chi-square test and the Fisher Exact Test We reject the Null Hypothesis because the P value is so small. Men died at the 2.3 times the rate that women died, proving that the death rate of Korean were dependent on sex.
+The question was if dying is independent of sex for Covid-19. After analyzing the ggplot, numerical summary, Pearson's chi-square and the Fisher Exact test we reject the Null Hypothesis because the p-value is so small. The results show that Men died at 2.3 times the rate that women died, resulting that the death rate of Korean were dependent on sex for Covid-19.
