@@ -81,8 +81,16 @@ Very few people actually died of Covid-19, 1.4% of Korean females died however 3
 
 ## Inferential results 
 
+```{r}
+chisq.test(table2)
+chisqtestGC(table2)
+fisher.test(table2)
+```
 
+The p-value 0.001 in the Pearson chi-squared test is small enough to reject the Null hypothesis. The death rate on Korean is dependent on sex.
 
+The Fisher Exact test shows that men died at 2.3 times than the rate women die.
 
 ## Conclusions
 
+The question was if dying is independent of sex. After analyzing the ggplot, numerical summary, Pearson chi-square test and the Fisher Exact Test We reject the Null Hypothesis because the P value is so small. Men died at the 2.3 times the rate that women died, proving that the death rate of Korean were dependent on sex.
